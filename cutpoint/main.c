@@ -103,5 +103,10 @@ int main() {
     if (childrenRoot > 1)    // if root has more than one descendant - it's cutpoint
         pushElement(listCutpoints, 1);
     printPoints(listCutpoints, numOfVertices);
+    free(visited);
+    free(timeInDfs);
+    free(leastTime);
+    free(adjacencyList);
+    free(listCutpoints);
     return 0;
 }

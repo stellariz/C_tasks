@@ -35,6 +35,7 @@ void printPoints(GRAPH* listCutpoints, int numOfVertices){
             ++copies[node->vertex];
         }
     }
+    free(copies);
 }
 
 

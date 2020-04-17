@@ -12,7 +12,6 @@ PATH{
 };
 
 
-
 bool isNotEmpty(PATH* top){
     return (top -> next);
 }
@@ -53,7 +52,7 @@ void searchEulerPath(int** matrix, int* deg, const int numOfVertices) {
                  break;
              }
          }
-         if(currentVertex == way -> next -> vertex) // if we didn't find vertex - pop from stack for another vertex
+         if (currentVertex == way -> next -> vertex) // if we didn't find vertex - pop from stack for check another vertex
              popInPath(way);
      }
     free(matrix);
